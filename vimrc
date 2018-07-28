@@ -350,7 +350,9 @@ augroup vimrc-make-cmake
 augroup END
 
 set autoread
-
+set updatetime=1000
+au FocusGained,BufEnter * :checktime
+au CursorHold,CursorHoldI * checktime
 "*****************************************************************************
 "" Mappings
 "*****************************************************************************
